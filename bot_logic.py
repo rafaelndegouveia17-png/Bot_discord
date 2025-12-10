@@ -1,4 +1,8 @@
 import random
+def horario_aleatorio():
+    horas = random.randint(0, 23)
+    minutos = random.randint(0, 59)
+    return f"{horas:02}:{minutos:02}"
 
 def gen_pass(pass_length):
     elements = "+-/*!&$#?=@<>"
